@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vice Media Group Portforlio
 
-## Getting Started
+Live url:
+[https://flight.github.io/vice/](https://flight.github.io/vice/)
 
-First, run the development server:
+[NextJS](http://nextjs.org) + [React](https://reactjs.org) + [Typescript](https://www.typescriptlang.org) + [Tailwind CSS](https://tailwindcss.com) + [Storybook](http://storybook.js.org) + [ESLint](https://eslint.org) + [Prettier](https://prettier.io) + [Husky](https://github.com/typicode/husky) + [Jest](https://jestjs.io) + [jest-dom (React Testing Library)](https://github.com/testing-library/jest-dom) + [Cypress](https://www.cypress.io)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Initial setup:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Install the node.js
+   https://nodejs.org/en/download/
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+2. Install the latest version of [pnpm package manager](https://pnpm.io/installation#using-npm)
+   `npm install -g pnpm` or `brew install pnpm`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Install the dependencies
+   `pnpm install`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Running
 
-## Learn More
+`pnpm dev`
 
-To learn more about Next.js, take a look at the following resources:
+## Production build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`pnpm build`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To run the server with the production build:
 
-## Deploy on Vercel
+`pnpm start`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Testing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Live mode
+`pnpm test`
+
+E2E tests
+`pnpm e2e`
+
+Pre-commit checks
+`pnpm pre-commit`
+
+## Design decisions
+
+- [NextJS](https://nextjs.org) - React frameworks with Server Side Rendering and a lot of other features
+- [Tailwind CSS](https://tailwindcss.com) + [PostCSS](http://postcss.org) for tree-shakable utility classes and minimum amount of hand-written CSS
+- [ESLint](http://eslint.org) + [Prettier](http://prettier.io) for linting and prettifying the codeHusky for pre-commit hooks
+- [Jest](https://jestjs.io) - Testing Framework with a focus on simplicity.
+- [Cypress](http://cypress.io) + [Cypress Testing Library](https://testing-library.com/docs/cypress-testing-library/intro/) for the end-to-end testing
