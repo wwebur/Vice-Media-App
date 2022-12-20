@@ -1,0 +1,16 @@
+// Special typescript project file, used by eslint only.
+// https://stackoverflow.com/a/64283139
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "pages",
+    "cypress",
+
+    // these are the eslint-only inclusions
+    ".eslintrc.cjs",
+    "tailwind.config.cjs",
+    "postcss.config.cjs",
+    "cypress.config.ts",
+    "jest.setup.ts"
+  ]
+}
