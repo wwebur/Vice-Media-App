@@ -1,0 +1,36 @@
+name: Deploy Live
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Unit Tests"]
+    branches: [main]
+    types:
+      - completed
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install pnpm
+        run: npm install pnpm@7 -g
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_VICE_2EF34 }}"
+          channelId: live
+          projectId: vice-2ef34
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks

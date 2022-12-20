@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import type { NextPage } from "next";
 import React from "react";
 
@@ -10,16 +9,10 @@ const Home: NextPage = () => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <main>
-      <h1>Vice Media Group Portforlio</h1>
+    <main className="container mx-auto mt-3">
+      <h1 className="text-3xl text-cyan-800">Vice Media Group Portforlio</h1>
 
-      <Image
-        src="/next.svg"
-        alt="Next.js Logo"
-        width={180}
-        height={37}
-        priority
-      />
+      <div className="border rounded p-4 mt-4">App goes here</div>
     </main>
   </>
 );

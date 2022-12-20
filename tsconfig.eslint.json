@@ -3,14 +3,16 @@
 {
   "extends": "./tsconfig.json",
   "include": [
+    // these are the eslint-only inclusions
+
     "pages",
     "cypress",
-
-    // these are the eslint-only inclusions
+    "__tests__",
     ".eslintrc.cjs",
     "tailwind.config.cjs",
     "postcss.config.cjs",
     "cypress.config.ts",
-    "jest.setup.ts"
+    "jest.setup.ts",
+    "jest.config.ts"
   ]
 }
