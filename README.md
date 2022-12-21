@@ -5,6 +5,8 @@ Live url:
 
 [NextJS](http://nextjs.org) + [React](https://reactjs.org) + [Typescript](https://www.typescriptlang.org) + [Tailwind CSS](https://tailwindcss.com) + [ESLint](https://eslint.org) + [Prettier](https://prettier.io) + [Husky](https://github.com/typicode/husky) + [Jest](https://jestjs.io) + [jest-dom (React Testing Library)](https://github.com/testing-library/jest-dom) + [Cypress](https://www.cypress.io)
 
+![Vice Media Group Portforlio App](screenshots/app.png?raw=true)
+
 ## Initial setup:
 
 1. Install the node.js
@@ -55,3 +57,7 @@ Deploy hosting and functions:
 - [ESLint](http://eslint.org) + [Prettier](http://prettier.io) for linting and prettifying the codeHusky for pre-commit hooks
 - [Jest](https://jestjs.io) - Testing Framework with a focus on simplicity.
 - [Cypress](http://cypress.io) + [Cypress Testing Library](https://testing-library.com/docs/cypress-testing-library/intro/) for the end-to-end testing
+
+![Giphy search app](screenshots/database.png?raw=true)
+![Giphy search app](screenshots/storage.png?raw=true)
+![Giphy search app](screenshots/api.png?raw=true)
