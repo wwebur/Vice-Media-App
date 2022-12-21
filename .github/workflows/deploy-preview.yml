@@ -32,3 +32,4 @@ jobs:
           channelId: "pr-${{ github.event.number }}-${{ github.event.pull_request.head.ref }}"
         env:
           FIREBASE_CLI_EXPERIMENTS: webframeworks
+          FIREBASE_API_KEY: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_VICE_2EF34 }}"

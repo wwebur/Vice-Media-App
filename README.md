@@ -3,7 +3,7 @@
 Live url:
 [https://vice-2ef34.web.app/](https://vice-2ef34.web.app/)
 
-[NextJS](http://nextjs.org) + [React](https://reactjs.org) + [Typescript](https://www.typescriptlang.org) + [Tailwind CSS](https://tailwindcss.com) + [Storybook](http://storybook.js.org) + [ESLint](https://eslint.org) + [Prettier](https://prettier.io) + [Husky](https://github.com/typicode/husky) + [Jest](https://jestjs.io) + [jest-dom (React Testing Library)](https://github.com/testing-library/jest-dom) + [Cypress](https://www.cypress.io)
+[NextJS](http://nextjs.org) + [React](https://reactjs.org) + [Typescript](https://www.typescriptlang.org) + [Tailwind CSS](https://tailwindcss.com) + [ESLint](https://eslint.org) + [Prettier](https://prettier.io) + [Husky](https://github.com/typicode/husky) + [Jest](https://jestjs.io) + [jest-dom (React Testing Library)](https://github.com/testing-library/jest-dom) + [Cypress](https://www.cypress.io)
 
 ## Initial setup:
 
