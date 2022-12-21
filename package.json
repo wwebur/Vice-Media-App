@@ -10,9 +10,10 @@
     "prettier": "prettier ./pages --write",
     "test": "jest --watch",
     "test:ci": "jest --ci",
-    "e2e": "CYPRESS_BASE_URL=http://localhost:3000 cypress open --e2e",
+    "e2e": "start-test 'next build && next start -p 3001' http://0.0.0.0:3001 'CYPRESS_BASE_URL=http://localhost:3001 cypress open --e2e'",
+    "e2e:ci": "start-test --expect 200 'next build && next start -p 3001' http://0.0.0.0:3001 'CYPRESS_BASE_URL=http://localhost:3001 cypress run'",
     "pre-commit:install": "husky install",
-    "pre-commit": "pnpm lint && pnpm prettier && pnpm test:ci"
+    "pre-commit": "pnpm lint && pnpm prettier && pnpm test:ci && pnpm e2e:ci"
   },
   "dependencies": {
     "@next/font": "13.0.7",
@@ -53,6 +54,7 @@
     "jest-environment-jsdom": "^29.3.1",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
+    "start-server-and-test": "^1.15.2",
     "tailwindcss": "^3.2.4",
     "ts-jest": "^29.0.3",
     "ts-node-dev": "^2.0.0"

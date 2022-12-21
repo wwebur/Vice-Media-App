@@ -3,7 +3,7 @@ name: Deploy Live
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Unit Tests"]
+    workflows: ["Unit and E2E Tests"]
     branches: [main]
     types:
       - completed

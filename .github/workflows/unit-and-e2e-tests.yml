@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Unit and E2E Tests
 
 defaults:
   run:
@@ -31,3 +31,6 @@ jobs:
 
       - name: Run unit tests
         run: pnpm test:ci
+
+      - name: Run e2e tests
+        run: pnpm e2e:ci
