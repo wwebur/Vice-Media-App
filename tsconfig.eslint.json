@@ -6,9 +6,12 @@
     // these are the eslint-only inclusions
 
     "pages",
+    "components",
+    "types",
     "cypress",
     "__tests__",
     ".eslintrc.cjs",
+    "next.config.mjs",
     "tailwind.config.cjs",
     "postcss.config.cjs",
     "cypress.config.ts",

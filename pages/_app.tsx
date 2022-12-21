@@ -11,7 +11,7 @@ const firebaseConfig = {
   projectId: "vice-2ef34",
   storageBucket: "vice-2ef34.appspot.com",
   messagingSenderId: "386196953739",
-  appId: "1:386196953739:web:07521cdba5ffe4e1ba128e",
+  appId: "1:386196953739:web:9c8871989f49edffba128e",
 };
 
 initializeApp(firebaseConfig);

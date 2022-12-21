@@ -4,61 +4,71 @@
       "id": "a1",
       "title": "Gaycation",
       "episodes": 24,
-      "product_image_url": "/images/gaycation.jpg"
+      "product_image_url": "/images/gaycation.jpg",
+      "product_image_url_thumb": "/images/gaycation_thumb.jpg"
     },
     {
       "id": "b2",
       "title": "Huang's World",
       "episodes": 12,
-      "product_image_url": "/images/huangsworld.jpg"
+      "product_image_url": "/images/huangsworld.jpg",
+      "product_image_url_thumb": "/images/huangsworld_thumb.jpg"
     },
     {
       "id": "c3",
       "title": "King of The Road",
       "episodes": 8,
-      "product_image_url": "/images/kingoftheroad.jpg"
+      "product_image_url": "/images/kingoftheroad.jpg",
+      "product_image_url_thumb": "/images/kingoftheroad_thumb.jpg"
     },
     {
       "id": "d5",
       "title": "Last Chance High",
       "episodes": 15,
-      "product_image_url": "/images/lastchancehigh.jpg"
+      "product_image_url": "/images/lastchancehigh.jpg",
+      "product_image_url_thumb": "/images/lastchancehigh_thumb.jpg"
     },
     {
       "id": "e6",
       "title": "Love Industries",
       "episodes": 21,
-      "product_image_url": "/images/loveindustries.jpg"
+      "product_image_url": "/images/loveindustries.jpg",
+      "product_image_url_thumb": "/images/loveindustries_thumb.jpg"
     },
     {
       "id": "f7",
       "title": "pilotweek",
       "episodes": 3,
-      "product_image_url": "/images/pilotweek.jpg"
+      "product_image_url": "/images/pilotweek.jpg",
+      "product_image_url_thumb": "/images/pilotweek_thumb.jpg"
     },
     {
       "id": "a8",
       "title": "States of Undress",
       "episodes": 7,
-      "product_image_url": "/images/statesofundress.jpg"
+      "product_image_url": "/images/statesofundress.jpg",
+      "product_image_url_thumb": "/images/statesofundress_thumb.jpg"
     },
     {
       "id": "b7",
       "title": "VICE",
       "episodes": 32,
-      "product_image_url": "/images/vicehbo.jpg"
+      "product_image_url": "/images/vicehbo.jpg",
+      "product_image_url_thumb": "/images/vicehbo_thumb.jpg"
     },
     {
       "id": "c8",
       "title": "Woman",
       "episodes": 9,
-      "product_image_url": "/images/woman.jpg"
+      "product_image_url": "/images/woman.jpg",
+      "product_image_url_thumb": "/images/woman_thumb.jpg"
     },
     {
       "id": "d9",
       "title": "VICE World of Sports",
       "episodes": 18,
-      "product_image_url": "/images/worldofsports.jpg"
+      "product_image_url": "/images/worldofsports.jpg",
+      "product_image_url_thumb": "/images/worldofsports_thumb.jpg"
     }
   ]
 }

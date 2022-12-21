@@ -15,7 +15,13 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "src"],
+  "include": [
+    "next-env.d.ts",
+    "pages",
+    "components",
+    "types",
+    "next.config.mjs"
+  ],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
