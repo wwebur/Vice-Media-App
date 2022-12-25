@@ -1,11 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
-import type Show from "../../types/Show";
+import type { Show, ShowAPIResponse } from "../../types/Show";
 
 const db = getFirestore();
 
-export const getShows = async () => {
+export const getShows = async (): Promise<Show[] | undefined> => {
   const showsRef = collection(db, "shows");
   const querySnapshot = await getDocs(showsRef);
 
@@ -13,14 +13,16 @@ export const getShows = async () => {
     return undefined;
   }
   const storage = getStorage();
-  let shows = querySnapshot.docs.map((doc) => doc.data()) as Show[];
-  shows = await Promise.all(
-    shows.map(async (show) => ({
+  const showsAPIResponse = querySnapshot.docs.map((doc) =>
+    doc.data()
+  ) as ShowAPIResponse[];
+  const shows = await Promise.all(
+    showsAPIResponse.map(async (show) => ({
       ...show,
-      product_image_url: await getDownloadURL(
+      imageUrl: await getDownloadURL(
         ref(storage, `images/shows/${show.product_image_url}`)
       ),
-      product_image_url_thumb: await getDownloadURL(
+      imageUrlThumb: await getDownloadURL(
         ref(storage, `images/shows/${show.product_image_url_thumb}`)
       ),
     }))

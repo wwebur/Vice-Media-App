@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import React, { useCallback } from "react";
 import { useRouter } from "next/router";
 import Portfolio from "../components/Portfolio";
-import type Show from "../types/Show";
+import type { Show } from "../types/Show";
 import { getShows } from "./api/shows";
 
 interface NextPageProps {
@@ -21,28 +21,32 @@ const Home: NextPage<NextPageProps> = ({ shows }) => {
   );
 
   return (
-    <>
+    <div className="max-w-screen-lg mx-auto">
       <Head>
         <title>Vice Media Group Portforlio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="container mx-auto mt-3">
-        <h1 className="text-3xl text-cyan-800 text-center">
+      <main className="mx-2 sm:container sm:mx-auto my-3">
+        <h1 className="text-xl text-cyan-800 text-center">
           Vice Media Group Portforlio
         </h1>
 
-        <div className="border rounded p-4 mt-4">
+        <div className="border rounded py-2 my-4 sm:mb-0">
           {shows && shows.length !== 0 ? (
-            <Portfolio currentId={id} onChange={onIdChange} shows={shows} />
+            <Portfolio
+              shows={shows}
+              onChange={onIdChange}
+              currentId={Array.isArray(id) ? id[0] : id}
+            />
           ) : (
-            <p className="my-5 text-red-900 text-center">
+            <p className="my-5 text-red-900 text-center px-4">
               Something went wrong, please try again later
             </p>
           )}
         </div>
       </main>
-    </>
+    </div>
   );
 };
 
