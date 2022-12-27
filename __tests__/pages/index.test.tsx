@@ -1,7 +1,7 @@
 import { act, render, screen } from "@testing-library/react";
 import React from "react";
 import mockRouter from "next-router-mock";
-import Home, { getServerSideProps } from "../pages/index";
+import Home, { getServerSideProps } from "../../pages/index";
 
 const SAMPLE_SHOWS = [
   {
@@ -21,10 +21,10 @@ const SAMPLE_SHOWS = [
 ];
 
 const mockPortfolio = jest.fn();
-jest.mock("../components/Portfolio", () => (props) => mockPortfolio(props));
+jest.mock("../../components/Portfolio", () => (props) => mockPortfolio(props));
 
 const mockGetShows = jest.fn(() => Promise.resolve(SAMPLE_SHOWS));
-jest.mock("../pages/api/shows", () => ({
+jest.mock("../../pages/api/shows", () => ({
   getShows: () => mockGetShows(),
 }));
 
