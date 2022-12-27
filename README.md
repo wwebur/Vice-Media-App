@@ -5,7 +5,11 @@ Live url:
 
 [NextJS](http://nextjs.org) + [React](https://reactjs.org) + [Typescript](https://www.typescriptlang.org) + [Tailwind CSS](https://tailwindcss.com) + [ESLint](https://eslint.org) + [Prettier](https://prettier.io) + [Husky](https://github.com/typicode/husky) + [Jest](https://jestjs.io) + [jest-dom (React Testing Library)](https://github.com/testing-library/jest-dom) + [Cypress](https://www.cypress.io)
 
-![Vice Media Group Portforlio App](screenshots/app.png?raw=true)
+Desktop:
+![Vice Media Group Portforlio App Desktop](screenshots/app_desktop.png?raw=true)
+
+Mobile:
+![Vice Media Group Portforlio App Mobile](screenshots/app_mobile.png?raw=true)
 
 ## Initial setup:
 
